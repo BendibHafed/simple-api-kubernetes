@@ -24,7 +24,7 @@ This project demonstrates a basic setup of a Node.js API application running in 
 1. **Clone the Repository**:
 
 
-   git clone https://github.com/yourusername/simple-api-kubernetes.git
+   git clone https://github.com/yourusername/simple-api-kubernetes.git <br>
    cd simple-api-kubernetes
 
 
