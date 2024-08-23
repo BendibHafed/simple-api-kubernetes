@@ -22,49 +22,39 @@ This project demonstrates a basic setup of a Node.js API application running in 
 ### Installation
 
 1. **Clone the Repository**:
-
-
-   git clone https://github.com/yourusername/simple-api-kubernetes.git <br>
-   cd simple-api-kubernetes
-
+   git clone https://github.com/yourusername/simple-api-kubernetes.git  <br />
+   cd simple-api-kubernetes  <br />
 - create a hidden file (.env)
 - fill it as:
-   FIRSTNAME: "your first name"
-   LASTNAME: "your last name"
-
+   FIRSTNAME: "your first name"  <br />
+   LASTNAME: "your last name"  <br />
 2. **Install Dependencies**:
  $ npm install
-
 3. **Run the Application Locally**:
-
-Start the application: <br>
- $ npm start
-
+Start the application:  <br />
+ $ npm start  <br />
 - The application should be running on http://localhost:3000
-
 ### Docker Setup
 1. **Build the Docker Image**:
- $ docker build -t bendibhafededdine/simple-api-proj:v1.0 .
-
+ $ docker build -t bendibhafededdine/simple-api-proj:v1.0 .  <br />
 2. **Run the Docker Container**:
- $ docker run -p 3000:3000 bendibhafededdine/simple-api-proj:v1.0 <br>
+ $ docker run -p 3000:3000 bendibhafededdine/simple-api-proj:v1.0  <br />
 
- - The application should be accessible at http://localhost:3000.
+ - The application should be accessible at http://localhost:3000  <br />
 
 ### Kubernetes Deployment
 1. **Create a ReplicaSet**:
-- Apply the replicaset.yaml to create a ReplicaSet in your Kubernetes cluster:<br>
- $ kubectl create -f replicaset-def.yaml
-
+- Apply the replicaset.yaml to create a ReplicaSet in your Kubernetes cluster:  <br />
+ $ kubectl create -f replicaset-def.yaml  <br />
 2. **Check the Deployment**:
-- Verify that the ReplicaSet and pods are running:<br>
- $ kubectl get rs  <br>
- $ kubectl get pods
+- Verify that the ReplicaSet and pods are running:  <br />
+ $ kubectl get rs  <br />
+ $ kubectl get pods  <br />
 
 3. **Cleanup**
- - To delete the ReplicaSet and associated pods: <br>
-  $ kubectl delete replicaset myapp-replicaset
+ - To delete the ReplicaSet and associated pods:  <br />
+  $ kubectl delete replicaset myapp-replicaset  <br />
 
 ###
-- **License**
+- **License**  <br />
 This project is licensed under the MIT License - see the LICENSE file for details.
