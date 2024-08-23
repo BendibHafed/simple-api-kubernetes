@@ -21,37 +21,37 @@ This project demonstrates a basic setup of a Node.js API application running in 
 
 ### Installation
 
-1. **Clone the Repository**:
+1. **Clone the Repository**:  <br />
    git clone https://github.com/yourusername/simple-api-kubernetes.git  <br />
    cd simple-api-kubernetes  <br />
-- create a hidden file (.env)
-- fill it as:
+- create a hidden file (.env)  <br />
+- fill it as: <br />
    FIRSTNAME: "your first name"  <br />
    LASTNAME: "your last name"  <br />
 2. **Install Dependencies**:
  $ npm install
-3. **Run the Application Locally**:
+3. **Run the Application Locally**:  <br />
 Start the application:  <br />
  $ npm start  <br />
-- The application should be running on http://localhost:3000
+- The application should be running on http://localhost:3000  <br />
 ### Docker Setup
-1. **Build the Docker Image**:
+1. **Build the Docker Image**:  <br />
  $ docker build -t bendibhafededdine/simple-api-proj:v1.0 .  <br />
-2. **Run the Docker Container**:
+2. **Run the Docker Container**:  <br />
  $ docker run -p 3000:3000 bendibhafededdine/simple-api-proj:v1.0  <br />
 
  - The application should be accessible at http://localhost:3000  <br />
 
-### Kubernetes Deployment
-1. **Create a ReplicaSet**:
+### Kubernetes Deployment  <br />
+1. **Create a ReplicaSet**:  <br />
 - Apply the replicaset.yaml to create a ReplicaSet in your Kubernetes cluster:  <br />
  $ kubectl create -f replicaset-def.yaml  <br />
-2. **Check the Deployment**:
+2. **Check the Deployment**:  <br />
 - Verify that the ReplicaSet and pods are running:  <br />
  $ kubectl get rs  <br />
  $ kubectl get pods  <br />
 
-3. **Cleanup**
+3. **Cleanup**  <br />
  - To delete the ReplicaSet and associated pods:  <br />
   $ kubectl delete replicaset myapp-replicaset  <br />
 
