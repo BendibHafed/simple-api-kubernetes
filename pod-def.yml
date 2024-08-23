@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: main-api
+  labels:
+    app: my_api
+    type: api
+spec:
+  containers:
+  - name: simple-api-proj-container
+    image: bendibhafededdine/simple-api-proj:v1.0

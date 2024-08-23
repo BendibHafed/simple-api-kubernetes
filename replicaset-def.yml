@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp-replicaset
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: my_api
+      type: restapi
+  template:
+    metadata:
+      labels:
+        app: my_api
+        type: restapi
+    spec:
+      containers:
+      - name: simple-api-proj-container
+        image: bendibhafededdine/simple-api-proj:v1.0
